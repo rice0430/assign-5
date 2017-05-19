@@ -1,0 +1,112 @@
+script(src="https://darkskyapp.github.io/skycons/skycons.js")
+#app
+  .container-fluid
+        .row
+          .col-xs-6
+            // Large button group
+            .btn-group
+              button.btn.btn-default.btn-lg.dropdown-toggle#toggleInfo(type='button', data-toggle='dropdown', aria-expanded='false')
+                | 台北市 
+                span.caret
+              ul#dropdown.dropdown-menu(role='menu')
+                li(role='presentation')
+                  a(role='menuitem', tabindex='1', href='#') 台北市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='2', href='#') 新北市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='3', href='#') 台中市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='4', href='#') 台南市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='5', href='#') 高雄市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='6', href='#') 基隆市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='7', href='#') 桃園市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='8', href='#') 新竹市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='9', href='#') 新竹縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='10', href='#') 苗栗縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='11', href='#') 彰化縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='12', href='#') 南投縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='13', href='#') 雲林縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='14', href='#') 嘉義市
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='15', href='#') 嘉義縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='16', href='#') 屏東縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='17', href='#') 宜蘭縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='18', href='#') 花蓮縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='19', href='#') 台東縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='20', href='#') 澎湖縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='21', href='#') 金門縣
+                  span.listTemps
+                li(role='presentation')
+                  a(role='menuitem', tabindex='22', href='#') 連江縣
+                  span.listTemps
+            div
+              span.temperature 
+              |  ℃
+          .col-xs-6
+            canvas#today(width='100', height='100')
+            .condition
+              span.date 
+              nbsp
+              nbsp
+              nbsp
+              span.description
+        .row
+          .col-xs-12
+            .panel.panel-default
+              // Default panel contents
+              .panel-heading Forecast
+              // Table
+              table.table
+                thead
+                  tr
+                    th.forecast 
+                    th.forecast 
+                    th.forecast 
+                tbody
+                  tr
+                    td.degree 
+                    td.degree 
+                    td.degree 
+                  tr
+                    td
+                      canvas#day1(width='64', height='64') Clear
+                    td
+                      canvas#day2(width='64', height='64') Mostly Sunny
+                    td
+                      canvas#day3(width='64', height='64') Mostly Cloudy
